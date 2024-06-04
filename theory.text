@@ -1,0 +1,32 @@
+
+=========CRUD=======
+
+1. C- Create=>
+
+CREATE TABLE students (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(191) NOT NULL,
+    roll INT NOT NULL,
+    class INT NOT NULL,
+    phone VARCHAR(191) NOT NULL,
+    email VARCHAR(191) NOT NULL,
+    address TEXT NOT NULL,
+    PRIMARY KEY (id)
+);
+
+2. R- Read=>
+
+SELECT * FROM rersults;
+SELECT * FROM rersults WHERE roll=1;
+SELECT name,subjct,marks FROM rersults WHERE roll=1;
+SELECT * FROM rersults WHERE id=1;
+
+
+3. U- Update=>
+
+UPDATE results SET subject= 'English' WHERE id=1;
+
+4. D- Delete
+
+DELETE FROM results WHERE id=2;
+
